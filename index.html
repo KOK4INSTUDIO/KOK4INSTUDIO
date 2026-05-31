@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KOK4INSTUDIO™ — Premium Eyewear & Apparel</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-nav" onclick="document.getElementById('mobileNav').classList.remove('open')">✕</button>
+  <a href="#home" onclick="document.getElementById('mobileNav').classList.remove('open')">Home</a>
+  <a href="#eyewear" onclick="document.getElementById('mobileNav').classList.remove('open')">Eyewear</a>
+  <a href="#apparel" onclick="document.getElementById('mobileNav').classList.remove('open')">Apparel</a>
+  <a href="#bestseller" onclick="document.getElementById('mobileNav').classList.remove('open')">Best Seller</a>
+  <a href="#contact" onclick="document.getElementById('mobileNav').classList.remove('open')">Contact</a>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="nav-inner">
+    <a href="#home" class="logo">KOK4IN<em>STUDIO</em>™</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#eyewear">Eyewear</a></li>
+      <li><a href="#apparel">Apparel</a></li>
+      <li><a href="#bestseller">Best Seller</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="icon-btn" title="Search" onclick="alert('Search feature coming soon!')">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn" title="Cart">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-badge">0</span>
+      </button>
+      <button class="btn-cta" onclick="scrollTo({top:document.getElementById('eyewear').offsetTop-70,behavior:'smooth'})">Shop Now</button>
+      <button class="hamburger-btn" onclick="document.getElementById('mobileNav').classList.add('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" style="padding:0">
+  <div class="hero">
+    <div class="hero-text">
+      <div class="tag">New Collection 2026</div>
+      <h1 class="hero-title">KOK4IN<br><span class="red">STUDIO™</span></h1>
+      <p class="hero-sub">Premium Eyewear &amp; Apparel for Everyday Style</p>
+      <div class="hero-btns">
+        <a href="#eyewear" class="btn-black">Shop Eyewear</a>
+        <a href="#apparel" class="btn-ghost">Shop Apparel</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="img/img1.png" alt="KOK4INSTUDIO™ Premium Eyewear">
+      <div class="hero-label">
+        <div class="hero-label-tag">Best Seller</div>
+        <div class="hero-label-val">Eyewear</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<div class="features reveal">
+  <div class="container">
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="feat-icon">🚚</div>
+        <div class="feat-title">Fast Shipping</div>
+        <div class="feat-desc">Pengiriman ke seluruh Indonesia via JNE, J&amp;T, dan SiCepat</div>
+        <div class="feat-line"></div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">💎</div>
+        <div class="feat-title">Premium Quality</div>
+        <div class="feat-desc">Material pilihan dengan quality control ketat di setiap produk</div>
+        <div class="feat-line"></div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔒</div>
+        <div class="feat-title">Secure Checkout</div>
+        <div class="feat-desc">Transaksi aman via Shopee atau WhatsApp dengan garansi kepuasan</div>
+        <div class="feat-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EYEWEAR -->
+<section id="eyewear">
+  <div class="container">
+    <div class="s-head reveal">
+      <div class="s-tag">Koleksi Kacamata</div>
+      <h2 class="s-title">Eyewear Collection</h2>
+      <p class="s-sub">Desain premium, modern, dan eksklusif untuk melengkapi gaya sehari-harimu</p>
+    </div>
+    <div class="prod-grid reveal">
+      <div class="prod-card" onclick="openDetail('Kacamata Rectangle Frame Leopard Retro','KOK4INSTUDIO™ Kacamata Rectangle Frame Leopard Retro','Rp 20.000','best','eyewear','Frame rectangle retro ikonik dengan motif leopard yang bold. UV400 protection, premium acetate, ringan dan nyaman.','https://down-id.img.susercontent.com/file/id-11134207-822wt-moi55fhhk1731a.webp')">
+        <div class="prod-img">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-822wt-moi55fhhk1731a.webp" alt="Rectangle Leopard Retro">
+          <span class="badge badge-best">Best Seller</span>
+          <div class="prod-overlay"><button class="btn-view" onclick="event.stopPropagation()">View Details</button></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">KOK4INSTUDIO™ Kacamata Rectangle Frame Leopard Retro</div>
+          <div class="prod-footer">
+            <span class="prod-price">Rp 20.000</span>
+            <button class="btn-buy" onclick="event.stopPropagation();openBuy('Kacamata Rectangle Frame Leopard Retro')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card" onclick="openDetail('Kacamata Fashion Frame Kotak Hitam','KOK4INSTUDIO™ Kacamata Fashion Frame Kotak Hitam','Rp 20.000','new','eyewear','Frame oval timeless dengan sentuhan modern. Material ringan dan kuat untuk kenyamanan penggunaan seharian.','https://down-id.img.susercontent.com/file/id-11134207-822wq-mob1sc32gydn2f.webp')">
+        <div class="prod-img">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-822wq-mob1sc32gydn2f.webp" alt="Kotak Hitam Frame">
+          <span class="badge badge-new">New</span>
+          <div class="prod-overlay"><button class="btn-view" onclick="event.stopPropagation()">View Details</button></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">KOK4INSTUDIO™ Kacamata Fashion Frame Kotak Hitam</div>
+          <div class="prod-footer">
+            <span class="prod-price">Rp 20.000</span>
+            <button class="btn-buy" onclick="event.stopPropagation();openBuy('Kacamata Fashion Frame Kotak Hitam')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card" onclick="openDetail('KOK4INSTUDIO Night Vision Yellow Lens UV400','KOK4INSTUDIO™ Night Vision Yellow Lens UV400','Rp 20.000','best','eyewear','Lensa kuning night vision premium untuk mengurangi silau saat berkendara malam hari. Proteksi UV400, frame acetate ringan dan kokoh.','https://down-id.img.susercontent.com/file/id-11134207-822wr-moia1edeox715c.webp')">
+        <div class="prod-img">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-822wr-moia1edeox715c.webp" alt="Night Vision Yellow Lens">
+          <span class="badge badge-best">Best Seller</span>
+          <div class="prod-overlay"><button class="btn-view" onclick="event.stopPropagation()">View Details</button></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">KOK4INSTUDIO™ Night Vision Yellow Lens UV400</div>
+          <div class="prod-footer">
+            <span class="prod-price">Rp 20.000</span>
+            <button class="btn-buy" onclick="event.stopPropagation();openBuy('KOK4INSTUDIO Night Vision Yellow Lens UV400')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card" onclick="openDetail('KOK4INSTUDIO Night Vision Black Lens UV400','KOK4INSTUDIO™ Night Vision Black Lens UV400','Rp 20.000','new','eyewear','Lensa hitam night vision premium untuk memblokir silau cahaya dan proteksi UV400 yang maksimal. Frame tebal berkualitas tinggi yang awet.','https://down-id.img.susercontent.com/file/id-11134207-822wm-moiaj6i6hp8gfe.webp')">
+        <div class="prod-img">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-822wm-moiaj6i6hp8gfe.webp" alt="Night Vision Black Lens">
+          <span class="badge badge-new">New</span>
+          <div class="prod-overlay"><button class="btn-view" onclick="event.stopPropagation()">View Details</button></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">KOK4INSTUDIO™ Night Vision Black Lens UV400</div>
+          <div class="prod-footer">
+            <span class="prod-price">Rp 20.000</span>
+            <button class="btn-buy" onclick="event.stopPropagation();openBuy('KOK4INSTUDIO Night Vision Black Lens UV400')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPAREL -->
+<section id="apparel" class="bg-gray">
+  <div class="container">
+    <div class="s-head reveal">
+      <div class="s-tag">Koleksi Pakaian</div>
+      <h2 class="s-title">Apparel Collection</h2>
+      <p class="s-sub">Outfit premium dengan cutting modern dan material berkualitas tinggi</p>
+    </div>
+    <div class="prod-grid reveal">
+      <div class="prod-card" onclick="openDetail('Signature Oversized Tee','KOK4INSTUDIO™ Signature Oversized Tee','Rp 129.000','best','apparel','Oversized tee signature dengan logo KOK4INSTUDIO™ ikonik. Cotton premium 230gsm, anti-pilling, warna tahan lama.')">
+        <div class="prod-img">
+          <div class="emoji-ph">👕<span>Apparel</span></div>
+          <span class="badge badge-best">Best Seller</span>
+          <div class="prod-overlay"><button class="btn-view" onclick="event.stopPropagation()">View Details</button></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">KOK4INSTUDIO™ Signature Oversized Tee</div>
+          <div class="prod-sizes"><span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span></div>
+          <div class="prod-footer">
+            <span class="prod-price">Rp 129.000</span>
+            <button class="btn-buy" onclick="event.stopPropagation();openBuy('Signature Oversized Tee')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card" onclick="openDetail('Studio Hoodie Premium','KOK4INSTUDIO™ Studio Hoodie Premium','Rp 249.000','new','apparel','Hoodie premium fleece tebal dan nyaman. Desain clean dengan logo bordir eksklusif KOK4INSTUDIO™.')">
+        <div class="prod-img">
+          <div class="emoji-ph">🧥<span>Apparel</span></div>
+          <span class="badge badge-new">New</span>
+          <div class="prod-overlay"><button class="btn-view" onclick="event.stopPropagation()">View Details</button></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">KOK4INSTUDIO™ Studio Hoodie Premium</div>
+          <div class="prod-sizes"><span class="size-tag">S</span><span class="size-tag">M</span><span class="size-tag">L</span><span class="size-tag">XL</span></div>
+          <div class="prod-footer">
+            <span class="prod-price">Rp 249.000</span>
+            <button class="btn-buy" onclick="event.stopPropagation();openBuy('Studio Hoodie Premium')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card" onclick="openDetail('Cargo Pants Urban','KOK4INSTUDIO™ Cargo Pants Urban','Rp 219.000','new','apparel','Cargo pants banyak kantong fungsional dengan cutting modern. Material canvas twill anti-lusuh tahan lama.')">
+        <div class="prod-img">
+          <div class="emoji-ph">👖<span>Apparel</span></div>
+          <span class="badge badge-new">New</span>
+          <div class="prod-overlay"><button class="btn-view" onclick="event.stopPropagation()">View Details</button></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">KOK4INSTUDIO™ Cargo Pants Urban</div>
+          <div class="prod-sizes"><span class="size-tag">28</span><span class="size-tag">30</span><span class="size-tag">32</span><span class="size-tag">34</span></div>
+          <div class="prod-footer">
+            <span class="prod-price">Rp 219.000</span>
+            <button class="btn-buy" onclick="event.stopPropagation();openBuy('Cargo Pants Urban')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card" onclick="openDetail('Baseball Cap Studio','KOK4INSTUDIO™ Baseball Cap Studio','Rp 89.000','best','apparel','Cap baseball dengan bordir logo premium. Adjustable strap untuk semua ukuran, material twill premium.')">
+        <div class="prod-img">
+          <div class="emoji-ph">🧢<span>Apparel</span></div>
+          <span class="badge badge-best">Best Seller</span>
+          <div class="prod-overlay"><button class="btn-view" onclick="event.stopPropagation()">View Details</button></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">KOK4INSTUDIO™ Baseball Cap Studio</div>
+          <div class="prod-sizes"><span class="size-tag">Free</span></div>
+          <div class="prod-footer">
+            <span class="prod-price">Rp 89.000</span>
+            <button class="btn-buy" onclick="event.stopPropagation();openBuy('Baseball Cap Studio')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEST SELLER CAROUSEL -->
+<section id="bestseller">
+  <div class="container">
+    <div class="s-head reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px">
+      <div>
+        <div class="s-tag">Terlaris</div>
+        <h2 class="s-title">Best Seller</h2>
+      </div>
+    </div>
+    <div class="carousel-outer reveal">
+      <div class="carousel-track" id="carTrack">
+        <div class="prod-card" onclick="openDetail('Kacamata Rectangle Frame Leopard Retro','KOK4INSTUDIO™ Kacamata Rectangle Frame Leopard Retro','Rp 20.000','best','eyewear','Frame rectangle retro ikonik dengan motif leopard yang bold. UV400 protection, premium acetate, ringan dan nyaman.','https://down-id.img.susercontent.com/file/id-11134207-822wt-moi55fhhk1731a.webp')">
+          <div class="prod-img"><img src="https://down-id.img.susercontent.com/file/id-11134207-822wt-moi55fhhk1731a.webp" alt="Rectangle Leopard"><span class="badge badge-best">Best Seller</span></div>
+          <div class="prod-info"><div class="prod-name">Kacamata Rectangle Frame Leopard Retro</div><div class="prod-footer"><span class="prod-price">Rp 20.000</span><button class="btn-buy" onclick="event.stopPropagation();openBuy('Kacamata Rectangle Frame Leopard Retro')">Buy Now</button></div></div>
+        </div>
+        <div class="prod-card" onclick="openDetail('Signature Oversized Tee','KOK4INSTUDIO™ Signature Oversized Tee','Rp 129.000','best','apparel','Oversized tee signature dengan logo KOK4INSTUDIO™ ikonik. Cotton premium 230gsm, anti-pilling, warna tahan lama.')">
+          <div class="prod-img"><div class="emoji-ph">👕<span>Apparel</span></div><span class="badge badge-best">Best Seller</span></div>
+          <div class="prod-info"><div class="prod-name">Signature Oversized Tee</div><div class="prod-footer"><span class="prod-price">Rp 129.000</span><button class="btn-buy" onclick="event.stopPropagation();openBuy('Signature Oversized Tee')">Buy Now</button></div></div>
+        </div>
+        <div class="prod-card" onclick="openDetail('Baseball Cap Studio','KOK4INSTUDIO™ Baseball Cap Studio','Rp 89.000','best','apparel','Cap baseball dengan bordir logo premium. Adjustable strap untuk semua ukuran, material twill premium.')">
+          <div class="prod-img"><div class="emoji-ph">🧢<span>Apparel</span></div><span class="badge badge-best">Best Seller</span></div>
+          <div class="prod-info"><div class="prod-name">Baseball Cap Studio</div><div class="prod-footer"><span class="prod-price">Rp 89.000</span><button class="btn-buy" onclick="event.stopPropagation();openBuy('Baseball Cap Studio')">Buy Now</button></div></div>
+        </div>
+        <div class="prod-card" onclick="openDetail('KOK4INSTUDIO Night Vision Yellow Lens UV400','KOK4INSTUDIO™ Night Vision Yellow Lens UV400','Rp 20.000','best','eyewear','Lensa kuning night vision premium untuk mengurangi silau saat berkendara malam hari. Proteksi UV400, frame acetate ringan dan kokoh.','https://down-id.img.susercontent.com/file/id-11134207-822wr-moia1edeox715c.webp')">
+          <div class="prod-img"><img src="https://down-id.img.susercontent.com/file/id-11134207-822wr-moia1edeox715c.webp" alt="Night Vision Yellow Lens"><span class="badge badge-best">Best Seller</span></div>
+          <div class="prod-info"><div class="prod-name">KOK4INSTUDIO™ Night Vision Yellow Lens UV400</div><div class="prod-footer"><span class="prod-price">Rp 20.000</span><button class="btn-buy" onclick="event.stopPropagation();openBuy('KOK4INSTUDIO Night Vision Yellow Lens UV400')">Buy Now</button></div></div>
+        </div>
+        <div class="prod-card" onclick="openDetail('Studio Hoodie Premium','KOK4INSTUDIO™ Studio Hoodie Premium','Rp 249.000','new','apparel','Hoodie premium fleece tebal dan nyaman. Desain clean dengan logo bordir eksklusif KOK4INSTUDIO™.')">
+          <div class="prod-img"><div class="emoji-ph">🧥<span>Apparel</span></div><span class="badge badge-new">New</span></div>
+          <div class="prod-info"><div class="prod-name">Studio Hoodie Premium</div><div class="prod-footer"><span class="prod-price">Rp 249.000</span><button class="btn-buy" onclick="event.stopPropagation();openBuy('Studio Hoodie Premium')">Buy Now</button></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="car-controls reveal">
+      <button class="car-btn" id="carPrev" aria-label="Prev">
+        <svg viewBox="0 0 24 24"><polyline points="15,18 9,12 15,6"/></svg>
+      </button>
+      <div class="dots" id="carDots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <button class="car-btn" id="carNext" aria-label="Next">
+        <svg viewBox="0 0 24 24"><polyline points="9,18 15,12 9,6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="bg-gray">
+  <div class="container">
+    <div class="s-head reveal">
+      <div class="s-tag">Review Pelanggan</div>
+      <h2 class="s-title">Apa Kata Mereka</h2>
+    </div>
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">Kacamatanya keren banget, sesuai foto! Packagingnya rapi dan pengirimannya super cepat. Langsung beli 2 warna deh!</p>
+        <div class="testi-author"><div class="avatar">A</div><div><div class="author-name">Ayu Rahmawati</div><div class="author-loc">Verified Buyer · Jakarta</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">Oversized teenya nyaman banget, bahannya tebal ga tipis kayak toko lain. Admin responsif dan fast respon. Recommended!</p>
+        <div class="testi-author"><div class="avatar">R</div><div><div class="author-name">Rizky Pratama</div><div class="author-loc">Verified Buyer · Bandung</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">Sudah repeat order ke-5 kali. Kualitas selalu konsisten, harga terjangkau untuk kualitas premium kayak gini. Keep it up!</p>
+        <div class="testi-author"><div class="avatar">S</div><div><div class="author-name">Siti Nadia</div><div class="author-loc">Verified Buyer · Surabaya</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section>
+  <div class="container">
+    <div class="s-head reveal" style="text-align:center">
+      <div class="s-tag" style="justify-content:center">Follow Us</div>
+      <h2 class="s-title">Instagram Gallery</h2>
+    </div>
+    <div class="insta-grid reveal">
+      <div class="insta-cell"><div class="ep">🕶️</div><div class="insta-ov">♥ 248</div></div>
+      <div class="insta-cell"><div class="ep">👕</div><div class="insta-ov">♥ 183</div></div>
+      <div class="insta-cell"><div class="ep">🧢</div><div class="insta-ov">♥ 312</div></div>
+      <div class="insta-cell"><div class="ep">👓</div><div class="insta-ov">♥ 197</div></div>
+      <div class="insta-cell"><div class="ep">🧥</div><div class="insta-ov">♥ 421</div></div>
+      <div class="insta-cell"><div class="ep">👖</div><div class="insta-ov">♥ 289</div></div>
+    </div>
+    <div class="insta-cta reveal">
+      <a href="https://instagram.com/kok4instudio" target="_blank" class="insta-handle">@KOK4INSTUDIO</a>
+      <p class="insta-sub">Follow kami untuk update koleksi terbaru dan promo eksklusif</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div id="contact" class="contact-sec">
+  <div class="container">
+    <div class="s-head reveal">
+      <div class="s-tag">Hubungi Kami</div>
+      <h2 class="s-title">Temukan Kami Di</h2>
+      <p class="s-sub">Tersedia di berbagai platform untuk kenyamanan belanja kamu</p>
+    </div>
+    <div class="contact-grid reveal">
+      <a href="https://wa.me/6289501798516" target="_blank" class="contact-card">
+        <span class="c-icon">💬</span>
+        <span class="c-name">WhatsApp</span>
+        <span class="c-handle">+62 895-0179-8516</span>
+      </a>
+      <a href="https://instagram.com/kok4instudio" target="_blank" class="contact-card">
+        <span class="c-icon">📸</span>
+        <span class="c-name">Instagram</span>
+        <span class="c-handle">@KOK4INSTUDIO</span>
+      </a>
+      <a href="https://shopee.co.id/KOK4INSTUDIO%E2%84%A2-Kacamata-Rectangle-Frame-Leopard-Retro-i.1818341376.57060915167" target="_blank" class="contact-card">
+        <span class="c-icon">🛒</span>
+        <span class="c-name">Shopee</span>
+        <span class="c-handle">KOK4INSTUDIO™</span>
+      </a>
+      <a href="#" target="_blank" class="contact-card">
+        <span class="c-icon">🎵</span>
+        <span class="c-name">TikTok Shop</span>
+        <span class="c-handle">@KOK4INSTUDIO</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="foot-logo">KOK4IN<em>STUDIO</em>™</a>
+        <p class="foot-desc">Premium Eyewear &amp; Apparel untuk gaya hidup modern. Kualitas terbaik dengan harga terjangkau.</p>
+        <div class="foot-social">
+          <a href="https://instagram.com/kok4instudio" target="_blank" class="soc-btn" title="Instagram">📸</a>
+          <a href="https://shopee.co.id/KOK4INSTUDIO%E2%84%A2-Kacamata-Rectangle-Frame-Leopard-Retro-i.1818341376.57060915167" target="_blank" class="soc-btn" title="Shopee">🛒</a>
+          <a href="#" target="_blank" class="soc-btn" title="TikTok">🎵</a>
+          <a href="https://wa.me/6289501798516" target="_blank" class="soc-btn" title="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Quick Links</h4>
+        <ul class="foot-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#eyewear">Eyewear</a></li>
+          <li><a href="#apparel">Apparel</a></li>
+          <li><a href="#bestseller">Best Seller</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Info</h4>
+        <ul class="foot-links">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Cara Pemesanan</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="foot-copy">© 2026 <strong>KOK4INSTUDIO™</strong>. All Rights Reserved.</p>
+      <p class="foot-copy">Designed with ♥ in Indonesia</p>
+    </div>
+  </div>
+</footer>
+
+<!-- BUY MODAL -->
+<div class="modal-bg" id="buyModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <div class="modal-title">Pilih Platform Pembelian</div>
+        <div class="modal-sub" id="buyProdName">Pilih platform untuk melanjutkan</div>
+      </div>
+      <button class="modal-close" onclick="closeBuy()">✕</button>
+    </div>
+    <div class="modal-body">
+      <a href="https://wa.me/6289501798516" target="_blank" class="platform-link wa">
+        <span class="p-icon">🟢</span>
+        <div><div class="p-name">WhatsApp</div><div class="p-desc">Chat Admin dan Pesan Sekarang</div></div>
+        <span class="p-arrow">→</span>
+      </a>
+      <a href="https://shopee.co.id/KOK4INSTUDIO%E2%84%A2-Kacamata-Rectangle-Frame-Leopard-Retro-i.1818341376.57060915167" target="_blank" class="platform-link sp">
+        <span class="p-icon">🛒</span>
+        <div><div class="p-name">Shopee</div><div class="p-desc">Beli Langsung di Shopee</div></div>
+        <span class="p-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- DETAIL MODAL -->
+<div class="modal-bg" id="detailModal">
+  <div class="modal-box detail-box">
+    <div class="detail-grid">
+      <div class="detail-img-side" id="dImgSide">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-822wt-moi55fhhk1731a.webp" alt="KOK4INSTUDIO™ Product Image" style="width:90%;max-width:320px;height:auto;object-fit:contain;">
+        <div class="big-emoji" id="dEmoji"></div>
+      </div>
+      <div class="detail-info">
+        <button class="modal-close" style="float:right;margin-bottom:8px" onclick="closeDetail()">✕</button>
+        <div style="clear:both"></div>
+        <span class="d-badge badge-best" id="dBadge">Best Seller</span>
+        <h2 class="d-name" id="dName">Product</h2>
+        <div class="d-price" id="dPrice">Rp 0</div>
+        <p class="d-desc" id="dDesc">Deskripsi</p>
+        <div id="dColorWrap">
+          <div class="d-label">Warna</div>
+          <div class="d-colors">
+            <div class="swatch active" style="background:#111" onclick="pickSwatch(this)"></div>
+            <div class="swatch" style="background:#C1121F" onclick="pickSwatch(this)"></div>
+            <div class="swatch" style="background:#8B6914" onclick="pickSwatch(this)"></div>
+          </div>
+        </div>
+        <div id="dSizeWrap" style="display:none">
+          <div class="d-label">Ukuran</div>
+          <div class="d-sizes" id="dSizes"></div>
+        </div>
+        <div class="d-actions" style="margin-top:4px">
+          <button class="btn-black" onclick="openBuyFromDetail()">Buy Now</button>
+          <button class="btn-ghost" onclick="closeDetail()">Close</button>
+        </div>
+        <div class="d-specs">
+          <div class="d-label">Spesifikasi</div>
+          <div class="spec-row"><span class="spec-k">Brand</span><span class="spec-v">KOK4INSTUDIO™</span></div>
+          <div class="spec-row" id="dSpecMat"><span class="spec-k">Material</span><span class="spec-v">Premium Acetate</span></div>
+          <div class="spec-row"><span class="spec-k">Origin</span><span class="spec-v">Indonesia</span></div>
+          <div class="spec-row"><span class="spec-k">Garansi</span><span class="spec-v">30 Hari Kepuasan</span></div>
+        </div>
+        <div class="d-reviews">
+          <div class="d-label">Review (4.9 ★)</div>
+          <div class="rev-item"><div class="rev-top"><span class="rev-name">Budi S.</span><span style="color:#F5A623;font-size:12px">★★★★★</span></div><p class="rev-text">Kualitasnya bagus banget, sesuai ekspektasi. Pengiriman cepat dan packaging rapi!</p></div>
+          <div class="rev-item"><div class="rev-top"><span class="rev-name">Dewi A.</span><span style="color:#F5A623;font-size:12px">★★★★★</span></div><p class="rev-text">Udah repeat order, emang worth it banget. Teman-teman pada nanya beli dimana 😍</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="module" src="/script.js"></script>
+</body>
+</html>
