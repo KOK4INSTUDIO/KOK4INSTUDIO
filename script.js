@@ -155,3 +155,13 @@ function startAuto(){
 function resetAuto(){ clearInterval(carAuto); startAuto(); }
 startAuto();
 window.addEventListener('resize', function(){ carIdx=0; updateCarousel(); });
+
+// Expose functions to global scope so inline handlers continue to work
+window.openBuy = openBuy;
+window.closeBuy = closeBuy;
+window.openDetail = openDetail;
+window.closeDetail = closeDetail;
+window.openBuyFromDetail = openBuyFromDetail;
+window.pickSize = pickSize;
+window.pickSwatch = pickSwatch;
+window.carSlide = carSlide;

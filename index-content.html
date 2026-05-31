@@ -1,17 +1,112 @@
-﻿<!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KOK4INSTUDIO™ — Premium Eyewear & Apparel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html>
+<!-- original body content for App.vue -->
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-nav" onclick="document.getElementById('mobileNav').classList.remove('open')">✕</button>
+  <a href="#home" onclick="document.getElementById('mobileNav').classList.remove('open')">Home</a>
+  <a href="#eyewear" onclick="document.getElementById('mobileNav').classList.remove('open')">Eyewear</a>
+  <a href="#apparel" onclick="document.getElementById('mobileNav').classList.remove('open')">Apparel</a>
+  <a href="#bestseller" onclick="document.getElementById('mobileNav').classList.remove('open')">Best Seller</a>
+  <a href="#contact" onclick="document.getElementById('mobileNav').classList.remove('open')">Contact</a>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="nav-inner">
+    <a href="#home" class="logo">KOK4IN<em>STUDIO</em>™</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#eyewear">Eyewear</a></li>
+      <li><a href="#apparel">Apparel</a></li>
+      <li><a href="#bestseller">Best Seller</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="icon-btn" title="Search" onclick="alert('Search feature coming soon!')">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn" title="Cart">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-badge">0</span>
+      </button>
+      <button class="btn-cta" onclick="scrollTo({top:document.getElementById('eyewear').offsetTop-70,behavior:'smooth'})">Shop Now</button>
+      <button class="hamburger-btn" onclick="document.getElementById('mobileNav').classList.add('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" style="padding:0">
+  <div class="hero">
+    <div class="hero-text">
+      <div class="tag">New Collection 2026</div>
+      <h1 class="hero-title">KOK4IN<br><span class="red">STUDIO™</span></h1>
+      <p class="hero-sub">Premium Eyewear &amp; Apparel for Everyday Style</p>
+      <div class="hero-btns">
+        <a href="#eyewear" class="btn-black">Shop Eyewear</a>
+        <a href="#apparel" class="btn-ghost">Shop Apparel</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="img/img1.png" alt="KOK4INSTUDIO™ Premium Eyewear">
+      <div class="hero-label">
+        <div class="hero-label-tag">Best Seller</div>
+        <div class="hero-label-val">Eyewear</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<div class="features reveal">
+  <div class="container">
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="feat-icon">🚚</div>
+        <div class="feat-title">Fast Shipping</div>
+        <div class="feat-desc">Pengiriman ke seluruh Indonesia via JNE, J&amp;T, dan SiCepat</div>
+        <div class="feat-line"></div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">💎</div>
+        <div class="feat-title">Premium Quality</div>
+        <div class="feat-desc">Material pilihan dengan quality control ketat di setiap produk</div>
+        <div class="feat-line"></div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔒</div>
+        <div class="feat-title">Secure Checkout</div>
+        <div class="feat-desc">Transaksi aman via Shopee atau WhatsApp dengan garansi kepuasan</div>
+        <div class="feat-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EYEWEAR -->
+<section id="eyewear">
+  <div class="container">
+    <div class="s-head reveal">
+      <div class="s-tag">Koleksi Kacamata</div>
+      <h2 class="s-title">Eyewear Collection</h2>
+      <p class="s-sub">Desain premium, modern, dan eksklusif untuk melengkapi gaya sehari-harimu</p>
+    </div>
+    <div class="prod-grid reveal">
+      <div class="prod-card" onclick="openDetail('Kacamata Rectangle Frame Leopard Retro','KOK4INSTUDIO™ Kacamata Rectangle Frame Leopard Retro','Rp 20.000','best','eyewear','Frame rectangle retro ikonik dengan motif leopard yang bold. UV400 protection, premium acetate, ringan dan nyaman.','https://down-id.img.susercontent.com/file/id-11134207-822wt-moi55fhhk1731a.webp')">
+        <div class="prod-img">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-822wt-moi55fhhk1731a.webp" alt="Rectangle Leopard Retro">
+          <span class="badge badge-best">Best Seller</span>
+          <div class="prod-overlay"><button class="btn-view" onclick="event.stopPropagation()">View Details</button></div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">KOK4INSTUDIO™ Kacamata Rectangle Frame Leopard Retro</div>
+          <div class="prod-footer">
+            <span class="prod-price">Rp 20.000</span>
+            <button class="btn-buy" onclick="event.stopPropagation();openBuy('Kacamata Rectangle Frame Leopard Retro')">Buy Now</button>
+          </div>
+        </div>
+      </div>
       <div class="prod-card" onclick="openDetail('Kacamata Fashion Frame Kotak Hitam','KOK4INSTUDIO™ Kacamata Fashion Frame Kotak Hitam','Rp 20.000','new','eyewear','Frame oval timeless dengan sentuhan modern. Material ringan dan kuat untuk kenyamanan penggunaan seharian.','https://down-id.img.susercontent.com/file/id-11134207-822wq-mob1sc32gydn2f.webp')">
         <div class="prod-img">
           <img src="https://down-id.img.susercontent.com/file/id-11134207-822wq-mob1sc32gydn2f.webp" alt="Kotak Hitam Frame">
@@ -375,6 +470,3 @@
     </div>
   </div>
 </div>
-<script src="script.js"></script>
-</body>
-</html>
