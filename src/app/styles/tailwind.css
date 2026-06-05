@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .kok4-card {
+    @apply bg-white shadow-soft rounded-xl border border-slate-100;
+  }
+  .kok4-muted {
+    @apply text-slate-500;
+  }
+}
+
